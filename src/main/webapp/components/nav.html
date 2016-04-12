@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>导航</title>
+    <link href="/js/bootstrap-3.3.5-dist/css/bootstrap.css" rel="stylesheet">
+    <script src="/js/jquery-1.12.3.min.js"></script>
+    <script src="/js/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+</head>
+<script>
+  $(function () {
+      $('#myTabs a').click(function (e) {
+          e.preventDefault()
+          $(this).tab('show')
+      })
+  })
+</script>
+<body>
+    <ul class="nav nav-pills" id="myTabs">
+        <li role="presentation" class="active"><a href="#">home  <span class="badge">30</span></a></li>
+        <li role="presentation"><a href="#">home</a></li>
+        <li role="presentation"><a href="#">home</a></li>
+        <li role="presentation"><a href="#">home</a></li>
+        <li role="presentation"><a href="/04code.html">home</a></li>
+    </ul>
+</body>
+</html>
